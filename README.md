@@ -1,9 +1,6 @@
 # Teste - Vaga Estágio Nave 2019
 Resolução do teste proposto para vaga de estágio. Nave_2019
 
-O resultado final do teste pode ser acessado através deste link:
-https://maicommr.github.io/testeNave/.
-
 # Proposta
 Propostas do teste
   Realizar buscas de Posts na API: https://jsonplaceholder.typicode.com/posts

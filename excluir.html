@@ -17,17 +17,19 @@
         <div class="caixaExcluirCentro">
             <div class="textoExcluir">
                 Digite o ID da Mensagem que você deseja
-                <span style="font-weight: 600"> excluir</span>
+                <span style="font-weight: 600"> excluir</span><br/>
 
-                <br/>
-                <input type="text" name="" id="" class="inputIdExcluir">
+                <input type="text" name="" id="idExcluir" class="inputIdExcluir" placeholder="ID">
                 <br/>
             </div>
-            <div class="caixaBtnExcluir">
 
+            <div class="caixaBtnExcluir" id="btnDeletar">
                 EXCLUIR POST
             </div>
+            
         </div>
+        <div id="divResultado"></div>
+
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="excluirPostAPI.js"></script>

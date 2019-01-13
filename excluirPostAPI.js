@@ -30,8 +30,9 @@ function excluirPostPorID() {
                 // TODO: ABA DE CONFIRMAÇÃO DE EXCLUSÃO DA MENSAGEM EXIBINDO A MENSAGEM EQUIVALENTE AO ID
 
                 // provisório...
-                alert("Usuário: "+ postUserId+                  
-                    "\n Mensagem: \n"+ msgPost);
+                alert("=== MENSAGEM EXCLUIDA ===\n"
+                    +"ID DO USUÁRIO: "+ postUserId+                  
+                    "\nMENSAGEM: \n"+ msgPost);
              });
 
         //conexão para envia ustilizando axios

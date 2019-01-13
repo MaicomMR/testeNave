@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloEnvioPost.css">
+
+    <title>Teste Nave 2019 - Novo</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <div class="botaoVoltar">Voltar</div>
+    </a>
+
+
+    <div class="Wrapper" id="janelaNovoPost">
+
+        <h1 class="Title">Fazer uma anotação</h1>
+        <div class="Input">
+            <input type="text" id="userID" class="Input-text" placeholder="Digite o seu ID">
+            <label for="input" class="Input-label">ID de usuário</label>
+        </div>
+        <div class="Input">
+            <input type="text" id="tituloPost" class="Input-text" placeholder="Título da anotação">
+            <label for="input" class="Input-label">Título da anotação</label>
+        </div>
+        <div class="Input">
+            <textarea name="" id="descPost" cols="2" rows="2" class="Input-text" placeholder="Anotação..."></textarea>
+            <label for="input" class="Input-label">Sua anotação</label>
+        </div>
+
+
+        <div id="btnEnviar" class="btnEnviar">
+            Registrar anotação
+        </div>
+
+    </div>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="enviarPostAPI.js"></script>
+</body>
+
+</html>

@@ -42,15 +42,18 @@ function enviarPost() {
             title: tituloPostVal,
             body: descPostVal,
             userId: idUsuarioVal
-        })
-
-
+        }
+        )
             .then(function (response) {
 
                 //Informa no log o status do .post
                 console.log(response);
-            })
-    }
 
+                // TODO: JANELA PARA INFORMAR O STATUS DA REQUISIÇÃO DO CLIENTE
+                alert("Seu post foi enviado com sucesso...");
+                document.getElementById("userID").focus(); 
+            }
+        )
+    }
 }
 

@@ -9,9 +9,6 @@ var saidaPosts = "";
 
 var element = "";
 
-const instance = axios.create({
-    baseURL: 'http://jsonplaceholder.typicode.com'
-});
 
 
 function buscarPorUsuario() {
@@ -37,14 +34,19 @@ function buscarPorUsuario() {
                 for (i = 0; i < response.data.length; i++) {
                     saidaPosts = saidaPosts + JSON.stringify(response.data[i]) + "\n";
 
+                    var postUserId = response.data[i].userId;
+                    var postId = response.data[i].id;
+                    var tituloPost = response.data[i].title;
+                    var msgPost = response.data[i].body;
+
                     element += `
                     <div class="caixaPost">
-                    <div class="caixaUsuarioId">Id do usuário: ${JSON.stringify(response.data[i].userId)}</div>
-                    <div class="caixaPostId">Id do post: ${JSON.stringify(response.data[i].id)}</div>
-                    <div class="caixaTituloPost">Título: ${JSON.stringify(response.data[i].title)}</div>
-                    <div class="caixaDescPost">Post: ${JSON.stringify(response.data[i].body)}</div>
+                    <div class="caixaUsuarioId">Usuário ID: `+postUserId+`</div>                              
+                    <div class="caixaPostId">Post ID: `+postId+`</div>
+                    <div class="caixaTituloPost">Título: `+tituloPost+`</div>
+                    <div class="caixaDescPost">Anotação: `+msgPost+`</div>
                     </div>
-                  `;
+                   `;
 
                 }
 

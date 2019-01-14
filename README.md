@@ -24,7 +24,7 @@ Esta janela é responsável por realizar consultas a API "https://jsonplaceholde
 ###### Resultados: Nesta aba os resultados podem ser observados visualmente através de caixas, as quais serão preenchidas com os posts encontrados, também sera exibida uma caixa com a mensagem "Nenhum post encontrado a partir do Id informado" caso a requisição não encontre nenhuma mensagem referente ao ID informado.
 
 ## Fazer uma anotação:
-Esta janela da o poder do usuário enviar a sua anotação para a API, o usuário deverá preencher os campos ID, Título e Mensagem. Ao solicitar que a página registre a anotação será realizada verificações sobre a validação dos campos informados e caso todos estejam corretos será feita a requisição de envio, uma mensagem de aviso deve aparecer para o usuário.
+Esta janela possibilita que o usuário envie uma anotação para a API, o usuário deverá preencher os campos ID, Título e Mensagem. Ao solicitar que a página registre a anotação será realizada verificações sobre a validação dos campos informados e caso todos estejam corretos será feita a requisição de envio, uma mensagem de aviso deve aparecer para o usuário.
 ###### Resultados: Para verificar o resultado é indicado o uso do console, através deste é possível ver com maiores detalhes o status da requisição.
 
 ## Excluir anotações
